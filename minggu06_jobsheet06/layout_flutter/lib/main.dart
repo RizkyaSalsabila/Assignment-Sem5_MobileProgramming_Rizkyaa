@@ -56,6 +56,19 @@ class MyApp extends StatelessWidget {
       ],
     );
 
+    // == PRAKTIKUM 3 ==
+    Widget textSection = Container(
+      padding: const EdgeInsets.all(32),
+      child: const Text(
+        'Air Terjun Coban Rondo terletak di Desa Pandansari, Kecamatan Pujon, Kabupaten Malang, Jawa Timur. '
+        'Dengan ketinggian sekitar 84 meter, air terjun ini menawarkan pemandangan alam yang memukau dan udara yang sejuk. '
+        'Lokasinya yang berada di lereng Gunung Kawi membuatnya menjadi salah satu destinasi wisata alam yang populer di Malang. '
+        'Pengunjung dapat menikmati keindahan alam sekitar, berfoto di spot-spot menarik, dan merasakan sensasi kesegaran air terjun yang menyegarkan.\n\n'
+        'Dibuat oleh: Rizkya Salsabila (2341720056)\n',
+        softWrap: true,
+      ),
+    );
+
     return MaterialApp(
       title: 'Flutter layout: Rizkya Salsabila_2341720056',
       home: Scaffold(
@@ -66,6 +79,7 @@ class MyApp extends StatelessWidget {
           children: [
             titleSection,
             buttonSection,
+            textSection,
           ],
         ),
       ),
