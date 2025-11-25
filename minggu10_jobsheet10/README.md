@@ -12,6 +12,7 @@ Variabel plan diperlukan, karena sebagai tempat menyimpan semua data Master Plan
 
 ### 4. Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
 ![praktikum1](assetReadme/praktikum1.gif)
+
 Dari hasil praktikum 1, saya berhasil membuat sebuah aplikasi untuk manajemen kegiatan - kegiatan. Terlihat bahwa saya dapat menambahkan banyak task seperti list. Selain itu, di setiap task juga bisa dicentang untuk menandai terselesainya kegiatan yang saya agendakan.
 
 ### 5. Apa kegunaan method pada Langkah 11 dan 13 dalam lifecyle state ?
@@ -34,6 +35,7 @@ Alasan Ditempatkan di model agar logika data terpusat, bersih, dan mudah dipakai
 
 ### 4. Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
 ![praktikum2](assetReadme/praktikum2.gif)
+
 Dari hasil pengerjaan, saya sudah berhasil mengaplikasikan state management menggunakan ValueNotifier untuk menangani perubahan data pada objek Plan(). Selain itu, saya juga telah menambahkan footer teks yang sudah disesuaikan dengan kebutuhan tampilan aplikasi. Mekanisme pembaruan UI yang sebelumnya mengandalkan setState kini berhasil saya refactor menjadi lebih rapi dan terstruktur melalui penggunaan ValueNotifier dan Provider.
 
 
@@ -43,8 +45,10 @@ Semua langkah praktikum, sudah diselesaikan dan berjalan tanpa error.
 
 ### 2. Berdasarkan Praktikum 3 yang telah Anda lakukan, jelaskan maksud dari gambar diagram berikut ini!
 ![soal2](assetReadme/soal2_3.PNG)
+
 Diagram tersebut menjelaskan bahwa state aplikasi ditempatkan pada level yang lebih tinggi (Lift State Up) sehingga dapat diakses oleh lebih dari satu halaman. Setelah menambahkan halaman baru (PlanScreen) dan melakukan navigasi dengan Navigator.push, aplikasi kini mampu menampilkan lebih dari satu rencana. Perubahan ini membuat susunan widget tree ikut bergeser karena tampilan di screen baru memiliki struktur berbeda. Meskipun berpindah halaman, data tetap tersinkronisasi karena seluruh screen mengambil state yang sama melalui PlanProvider.
 
 ### 3. Lakukan capture hasil dari Langkah 14 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
 ![praktikum3](assetReadme/praktikum3.gif)
+
 Pada langkah ini, saya menambahkan sebuah screen baru agar aplikasi Master Plan dapat menampilkan lebih dari satu daftar plan. Dengan menerapkan konsep ‘Lift State Up’, state dari setiap Plan ditempatkan di level yang lebih tinggi sehingga bisa diakses oleh lebih dari satu halaman. Kini aplikasi yang saya buat bisa menampilkan daftar banyak plan, membuka salah satu plan, dan mempertahankan state secara konsisten menggunakan PlanProvider.
