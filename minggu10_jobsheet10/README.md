@@ -44,7 +44,7 @@ Dari hasil pengerjaan, saya sudah berhasil mengaplikasikan state management meng
 Semua langkah praktikum, sudah diselesaikan dan berjalan tanpa error.
 
 ### 2. Berdasarkan Praktikum 3 yang telah Anda lakukan, jelaskan maksud dari gambar diagram berikut ini!
-![soal2](assetReadme/soal2_3.PNG)
+![soal2](assetReadme/soal2_3.JPG)
 
 Diagram tersebut menjelaskan bahwa state aplikasi ditempatkan pada level yang lebih tinggi (Lift State Up) sehingga dapat diakses oleh lebih dari satu halaman. Setelah menambahkan halaman baru (PlanScreen) dan melakukan navigasi dengan Navigator.push, aplikasi kini mampu menampilkan lebih dari satu rencana. Perubahan ini membuat susunan widget tree ikut bergeser karena tampilan di screen baru memiliki struktur berbeda. Meskipun berpindah halaman, data tetap tersinkronisasi karena seluruh screen mengambil state yang sama melalui PlanProvider.
 
